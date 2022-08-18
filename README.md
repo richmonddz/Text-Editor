@@ -2,7 +2,9 @@
 
 ## Description
 
-A text editor app that adds functionality for it to work as a PWA with the functionality to work offline.
+A text editor app that adds functionality for it to work as a PWA with the functionality to work offline. It is also deployed to heroku!
+
+## Heroku Link
 
 ### Table of contents
 
