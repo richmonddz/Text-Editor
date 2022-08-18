@@ -4,13 +4,16 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "server": "nodemon server.js --ignore client"
+        "server": "nodemon server.js --ignore client",
+        "start":"serve -s build"
+        
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "serve": "^14.0.1"
     },
     "devDependencies": {
         "nodemon": "^2.0.4"
