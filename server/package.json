@@ -3,9 +3,16 @@
     "version": "1.0.0",
     "description": "",
     "main": "server.js",
+    "engines": {
+        "node": "16.15.0"
+    },
     "scripts": {
-        "server": "nodemon server.js --ignore client",
-        "start":"serve -s build"
+        "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install",
+    "client": "cd client && npm start"
         
     },
     "keywords": [],
@@ -13,9 +20,11 @@
     "license": "ISC",
     "dependencies": {
         "express": "^4.17.1",
-        "serve": "^14.0.1"
+        "if-env": "^1.0.4"
     },
     "devDependencies": {
-        "nodemon": "^2.0.4"
+        "concurrently": "^5.2.0",
+        "nodemon": "^2.0.4",
+        "webpack": "^5.74.0"
     }
 }
