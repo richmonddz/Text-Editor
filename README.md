@@ -6,6 +6,8 @@ A text editor app that adds functionality for it to work as a PWA with the funct
 
 ## Heroku Link
 
+https://text-editorz.herokuapp.com/
+
 ### Table of contents
 
 - [Demo](#Video-Demo)
